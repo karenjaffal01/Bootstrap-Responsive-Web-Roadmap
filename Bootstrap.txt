@@ -1,0 +1,111 @@
+Bootstrap:
+-Saas is a css preprocessor which allow to edit css variables (change btn colors or anything you want) so download bootstrap source files then you can customize the classes as you want
+ 
+    NAVBAR:
+
+-navbar-expand to make the navbar responsive and we can choose any size we want 
+lg for large
+md for medium 
+small for sm
+extra small is by default 
+when saying navbar-expand-lg means keep expanded at large when getting to md or small change it if it was navbar-expand-md it will stay expanded till it reaches small
+-navbar-expand-lg: Expands the navbar on large screens and above, collapses on medium and smaller screens.
+
+-for changing colors use bg-(color) you can see the colors defined in bootstrap in documentation where you enter in customize then colors to access them 
+
+-for first element inside navbar use navbar-brand that would typically link to home page
+
+-for the other links present in navbar use for div class collapse navbar-collapse 
+collapse: This class makes the content collapsible (hidden by default on smaller screens).
+navbar-collapse: This class applies the specific styles for collapsing content within the navbar.
+
+-ms-auto : stands for margin start auto where the element that get this class will be aligned to the far most right of the container 
+
+-class="navbar-toggler": This class styles the button as a toggle button (often a "hamburger" icon) that is used to expand or collapse the navbar content on smaller screens.
+
+type="button": Specifies the button type as a button, ensuring it acts as a clickable button.
+
+data-bs-toggle="collapse": This attribute triggers the collapse functionality provided by Bootstrap’s JavaScript. When the button is clicked, it will toggle the collapse of the targeted element.
+
+FIX NABVAR: to let the navbar fixed on top when giving nav bar class fixed-top we get a problem where in top it will overlap 
+so use css to get body::before 
+
+    PADDING: 
+
+pt is for padding top and you define how much padding by pt-n 
+pb id for padding bottom
+px is for padding on x axis (left and right)
+py is for padding on y axis (top and bottom)
+p-n alone is for overall padding in all directions
+NOTE: same for margin but use m instead of p     and same for gap but use g 
+
+    FLEXBOX:
+
+-class d-flex represent a flex box 
+with it we can use classes justify-content , flex-row , flex-column and align-items
+-d-sm-flex: Flexbox is applied on small (sm) screens and larger (md, lg, xl, xxl).
+Below small (xs): No flexbox, uses the default display behavior.
+
+    IMAGES:
+
+-img-fluid sets the max-width to 100% and its height to auto
+-w-50 to set the width to 50%
+-
+
+    TEXT-STYLE:
+
+-to change text color use class text-colorname(according to colors defined in bootstrap)
+-class lead will make text bigger
+-we can use class of h1 or other headings to make the text in div bigger
+-The fw-bold class in Bootstrap is used to apply bold font weight to text, making it appear bolder.
+
+    BOXES:
+
+-use row to contain the columns 
+NOTE: if you want on smaller screens to get the cols stacked on each other you need to have the class as col-md so that anything smaller than md wouldn't get class col and thus boxes are stacked under each other 
+
+    CARDS:
+
+-we first have wrapping class card
+-inside it we have class card-body
+
+
+    BOOTSTRAP ICONS:
+
+-first copy the cdn
+-in an i tag use bi to access icons present in the manual
+
+
+    BOOTSTRAP GRID SYSTEM:
+
+-consist of 12 rows and 12 cols (col-md-6 means we want to take 6 columns on meduim screens)
+    
+    LISTS:
+
+-start the list with class list-group and use list-group-flush to to style a list group such that it removes the default borders 
+and padding around the list items and makes the list items sit flush against the container (such as a card)
+-then use class list-group-item for li this class applies a border to each list item, creating the line under each item
+
+GENERAL NOTES:
+-use the following link to get random people portfolio pictures using an api 
+https://randomuser.me/api/portraits/men/11.jpg
+-to generate a map use account.mapbox.com first go to download sdk from web then copy the cdn 
+then at next copy everything in a script tag
+then add under map add a value called center and give it a number to represent the location you want
+- bi-arrow-up on its own when clicked will take you to the begining of the web page 
+
+
+
+ 
+
+
+    
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,94 @@
+* {
+    box-sizing: border-box; 
+}
+
+html{
+    width: 100%;
+    overflow-x: hidden; 
+}
+
+body{
+    margin:0;
+    padding:0;
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+body::before{
+    display:block;
+    content:'';
+    height:60px;
+}
+
+.sec{
+    background-color: rgb(241, 132, 53);
+}
+
+.head{
+    color:rgb(241, 132, 53);
+    font-family: "Georgia", serif;
+    margin-left:-10px;
+}
+
+.navbar {
+    box-shadow: 0 4px 10px -4px rgba(0, 0, 0, 0.5);
+}
+
+@media(min-width:768px){
+   .in{
+      width:50%;
+   }  
+}
+
+.button1{
+    background-color:rgb(241, 132, 53) ;
+}
+
+.container1{
+    width:100%;
+
+}
+.par{
+    line-height:2;
+}
+.section{
+    width:100vw;
+    overflow-x: hidden;
+}
+
+.card {
+    position: relative; /* Ensure card becomes the reference for absolute positioning */
+    min-height: 450px;  /* Set minimum height to ensure all cards have the same height */
+}
+  
+  
+.links {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: center;
+}
+  
+#map{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+iframe{
+    filter:invert(100%); /*to let the map be displayed in dark mode*/
+}
+  
+  
+
+
+
+
+
+
+
